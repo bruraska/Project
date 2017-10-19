@@ -1,0 +1,293 @@
+body{
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #F1EAEA;
+    background-image: url('a.jpg');
+    background-position: center;
+   
+}
+
+h1{
+    margin: 0;
+    font-family: 'Ewert', Arial, sans-serif;
+    font-weight: 700;
+    }
+
+h2, h3,h4,h5,h6{
+    margin: 0;
+    font-family: "rye", Arial, sans-serif;
+    font-weight: 700;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 5px;
+}
+
+.botao{
+    color: floralwhite;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: burlywood;
+    font-size: .9em;
+    border-radius: 3px;
+
+}
+
+/*nav*/
+
+nav{
+    background-image: url('text.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #952A2A;
+    
+}
+
+nav > a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "rye", serif;
+    
+}
+
+nav ul{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: "rye", serif;
+    font-size: 20px;
+  
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%
+}
+nav ul li  a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+/*
+cabeclho*/
+
+header{
+    background-image: url('as.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    color: rgba(248, 242, 242, 0.95);
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+header p{
+    margin-bottom: 2em;
+    font-family: 'Akronim';
+    font-size: 40px;
+}
+.corpo{
+    background-clip: 0;
+    color: #CCC;
+}    
+.slide {
+    min-height: 350px;
+    border: 5px solid #fff;
+    position: relative;
+}
+
+.slideImg {
+    position: absolute;
+    opacity: 0;
+    animation: anime 15s infinite;
+}
+
+@keyframes anime{
+    25%{
+        opacity: 1
+    }
+    50%{
+        width: 30%;
+        background: none;
+    }
+    75%{
+        opacity: 0
+    }
+}
+
+.slideImg:nth-child(0) {
+    animation-delay: 0s
+}
+.slideImg:nth-child(1) {
+    animation-delay: 10s
+}
+.slideImg:nth-child(2) {
+    animation-delay: 20s
+}
+.slideImg:nth-child(3) {
+    animation-delay: 35s
+}
+.slideImg:nth-child(4) {
+    animation-delay: 40s
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    background-image: url('w.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+
+}
+
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width:  1000px;
+    font-family: 'Akronim';
+
+}
+
+#sobre .botao{
+    background-color: #4d4d4d
+}
+
+#servicos {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 30px;
+}
+
+#servicos img{
+    display: flex;
+    max-width: 200px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: 20px;
+    padding-top: 20px;
+}
+#menu h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+#menu img{
+    width: 100%;
+
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#contato h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}    
+
+#contato p {
+    font-size: 30px;
+    font-family: 'Akronim';
+}
+#contato a {
+    color: white;
+    font-family: 'Akronim';
+}
+#contato img{
+    width: 100px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #E2F404;
+    color: #0B0909;
+}
+
+/* media queries*/
+
+@media screen and ( min-width: 1000px) {
+    /*nav*/
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        }
+    
+    nav ul {
+        flex-direction: row;
+        width: 70%;         
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;         
+    }
+
+    header {
+        height: 600px;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    #sobre {
+        height: 250px;
+        height: 30%;
+        justify-content: center;
+        min-height: 250px;
+
+    }
+    #servicos {
+        flex-direction: row;
+        flex-wrap:  wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #servicos div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500PX;
+        margin: 0 auto;
+    }
+    #contato h2,
+    #contato p{
+        width: 100%;
+    }
+}
